@@ -27,7 +27,7 @@ jobs:
 
 
       - name: Cache Go modules
-        uses: action/cache@v3
+        uses: actions/cache@v3
         with:
           path: ~/.cache/go-build
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum')}}
